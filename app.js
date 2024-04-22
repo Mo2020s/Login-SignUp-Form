@@ -83,6 +83,9 @@ function checkCredentials() {
     array.push(info);
     console.log(array);
     alert("User Created");
+    inputs.forEach((input) => {
+      input.style.borderColor = "";
+    });
   } else {
     inputs.forEach((input) => {
       input.style.borderColor = "red";
